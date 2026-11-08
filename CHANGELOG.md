@@ -1,0 +1,26 @@
+# قائمة التغييرات
+
+جميع التغييرات المهمة في هذه المكتبة تُوثَّق هنا.
+الصيغة مبنية على [Keep a Changelog](https://keepachangelog.com/ar/1.0.0/).
+
+## [1.0.0] - 2026-11-08
+
+### أُضيف
+- 13 عائلة خطية مضمّنة (9 عربية + 4 لاتينية) و**56 وزناً**، بلا تحميل من الشبكة:
+  Cairo، Tajawal، Almarai، IBM Plex Sans Arabic، Noto Kufi Arabic، Reem Kufi،
+  Amiri، Aref Ruqaa، Scheherazade New، Poppins، Montserrat، Inter، Roboto.
+- `KitFonts`: سجل الخطوط مع تصفية عربية/لاتينية وحسب التصنيف والاستخدام.
+- `KitFont`: وصف عائلة خطية (الأوزان، التصنيف، الوصف، `matches()` للبحث).
+- `FontKit`: متحكّم `ChangeNotifier` لتغيير الخط لحظياً + `applyTo(ThemeData)`.
+- `FontKitScope`: توفير المتحكّم لكل الشجرة عبر `InheritedNotifier`.
+- `KitText`: ودجت نص بخط المكتبة.
+- `FontSpecimen`: بطاقة معاينة (Specimen) للخط.
+- `FontPickerPage` + `showFontPicker` + `showFontPickerSheet` + `FontPickerButton`:
+  واجهة عربية كاملة لاختيار الخط (بحث + تبويبات + معاينة حيّة).
+- تطبيق تجريبي كامل (`example/`) بوضع ليلي ووضع نهاري.
+- 22 اختباراً (20 للمكتبة + 2 للتطبيق التجريبي).
+
+### ملاحظات
+- الخطوط أصلية من [Google Fonts](https://fonts.google.com) بترخيص OFL-1.1.
+- الخطوط المتغيّرة (Variable) حُوّلت إلى نسخ ثابتة بأوزان منفصلة لضمان عملها
+  بشكل موحّد على كل أنظمة التشغيل.

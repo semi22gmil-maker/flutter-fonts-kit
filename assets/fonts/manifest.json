@@ -1,0 +1,131 @@
+{
+  "Cairo": {
+    "dir": "cairo",
+    "files": [
+      "Cairo[slnt,wght].ttf"
+    ],
+    "license": "OFL-1.1",
+    "size_kb": 585
+  },
+  "Tajawal": {
+    "dir": "tajawal",
+    "files": [
+      "Tajawal-ExtraLight.ttf",
+      "Tajawal-Light.ttf",
+      "Tajawal-Regular.ttf",
+      "Tajawal-Medium.ttf",
+      "Tajawal-Bold.ttf",
+      "Tajawal-ExtraBold.ttf",
+      "Tajawal-Black.ttf"
+    ],
+    "license": "OFL-1.1",
+    "size_kb": 409
+  },
+  "Almarai": {
+    "dir": "almarai",
+    "files": [
+      "Almarai-Light.ttf",
+      "Almarai-Regular.ttf",
+      "Almarai-Bold.ttf",
+      "Almarai-ExtraBold.ttf"
+    ],
+    "license": "OFL-1.1",
+    "size_kb": 613
+  },
+  "IBM Plex Sans Arabic": {
+    "dir": "ibm-plex-sans-arabic",
+    "files": [
+      "IBMPlexSansArabic-Thin.ttf",
+      "IBMPlexSansArabic-ExtraLight.ttf",
+      "IBMPlexSansArabic-Light.ttf",
+      "IBMPlexSansArabic-Regular.ttf",
+      "IBMPlexSansArabic-Medium.ttf",
+      "IBMPlexSansArabic-SemiBold.ttf",
+      "IBMPlexSansArabic-Bold.ttf"
+    ],
+    "license": "OFL-1.1",
+    "size_kb": 1652
+  },
+  "Noto Kufi Arabic": {
+    "dir": "noto-kufi-arabic",
+    "files": [
+      "NotoKufiArabic[wght].ttf"
+    ],
+    "license": "OFL-1.1",
+    "size_kb": 424
+  },
+  "Reem Kufi": {
+    "dir": "reem-kufi",
+    "files": [
+      "ReemKufi[wght].ttf"
+    ],
+    "license": "OFL-1.1",
+    "size_kb": 124
+  },
+  "Amiri": {
+    "dir": "amiri",
+    "files": [
+      "Amiri-Regular.ttf",
+      "Amiri-Bold.ttf",
+      "Amiri-Italic.ttf",
+      "Amiri-BoldItalic.ttf"
+    ],
+    "license": "OFL-1.1",
+    "size_kb": 1643
+  },
+  "Aref Ruqaa": {
+    "dir": "aref-ruqaa",
+    "files": [
+      "ArefRuqaa-Regular.ttf",
+      "ArefRuqaa-Bold.ttf"
+    ],
+    "license": "OFL-1.1",
+    "size_kb": 229
+  },
+  "Scheherazade New": {
+    "dir": "scheherazade-new",
+    "files": [
+      "ScheherazadeNew-Regular.ttf",
+      "ScheherazadeNew-Medium.ttf",
+      "ScheherazadeNew-SemiBold.ttf",
+      "ScheherazadeNew-Bold.ttf"
+    ],
+    "license": "OFL-1.1",
+    "size_kb": 2048
+  },
+  "Poppins": {
+    "dir": "poppins",
+    "files": [
+      "Poppins-Regular.ttf",
+      "Poppins-Medium.ttf",
+      "Poppins-SemiBold.ttf",
+      "Poppins-Bold.ttf"
+    ],
+    "license": "OFL-1.1",
+    "size_kb": 617
+  },
+  "Montserrat": {
+    "dir": "montserrat",
+    "files": [
+      "Montserrat[wght].ttf"
+    ],
+    "license": "OFL-1.1",
+    "size_kb": 727
+  },
+  "Inter": {
+    "dir": "inter",
+    "files": [
+      "Inter[opsz,wght].ttf"
+    ],
+    "license": "OFL-1.1",
+    "size_kb": 856
+  },
+  "Roboto": {
+    "dir": "roboto",
+    "files": [
+      "Roboto[wdth,wght].ttf"
+    ],
+    "license": "OFL-1.1",
+    "size_kb": 477
+  }
+}

@@ -1,0 +1,170 @@
+name: flutter_fonts_kit
+description: >-
+  مكتبة خطوط عربية ولاتينية جاهزة لتطبيقات Flutter: 13 عائلة خطية مضمّنة مع
+  أدوات اختيار ومعاينة وتطبيق الخطوط على الثيم. A ready-to-use Arabic & Latin
+  font kit for Flutter with a built-in font picker, specimens and theming helpers.
+version: 1.0.0
+homepage: https://github.com/your-username/flutter-fonts-kit
+repository: https://github.com/your-username/flutter-fonts-kit
+issue_tracker: https://github.com/your-username/flutter-fonts-kit/issues
+
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+  flutter: ">=3.22.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  # الخطوط مضمنة داخل الحزمة — لا حاجة لأي تحميل من الشبكة.
+  fonts:
+  - family: Cairo
+    fonts:
+      - asset: assets/fonts/cairo/Cairo-ExtraLight.ttf
+        weight: 200
+      - asset: assets/fonts/cairo/Cairo-Light.ttf
+        weight: 300
+      - asset: assets/fonts/cairo/Cairo-Regular.ttf
+        weight: 400
+      - asset: assets/fonts/cairo/Cairo-SemiBold.ttf
+        weight: 600
+      - asset: assets/fonts/cairo/Cairo-Bold.ttf
+        weight: 700
+      - asset: assets/fonts/cairo/Cairo-Black.ttf
+        weight: 900
+  - family: Tajawal
+    fonts:
+      - asset: assets/fonts/tajawal/Tajawal-ExtraLight.ttf
+        weight: 200
+      - asset: assets/fonts/tajawal/Tajawal-Light.ttf
+        weight: 300
+      - asset: assets/fonts/tajawal/Tajawal-Regular.ttf
+        weight: 400
+      - asset: assets/fonts/tajawal/Tajawal-Medium.ttf
+        weight: 500
+      - asset: assets/fonts/tajawal/Tajawal-Bold.ttf
+        weight: 700
+      - asset: assets/fonts/tajawal/Tajawal-ExtraBold.ttf
+        weight: 800
+      - asset: assets/fonts/tajawal/Tajawal-Black.ttf
+        weight: 900
+  - family: Almarai
+    fonts:
+      - asset: assets/fonts/almarai/Almarai-Light.ttf
+        weight: 300
+      - asset: assets/fonts/almarai/Almarai-Regular.ttf
+        weight: 400
+      - asset: assets/fonts/almarai/Almarai-Bold.ttf
+        weight: 700
+      - asset: assets/fonts/almarai/Almarai-ExtraBold.ttf
+        weight: 800
+  - family: IBM Plex Sans Arabic
+    fonts:
+      - asset: assets/fonts/ibm-plex-sans-arabic/IBMPlexSansArabic-Thin.ttf
+        weight: 100
+      - asset: assets/fonts/ibm-plex-sans-arabic/IBMPlexSansArabic-ExtraLight.ttf
+        weight: 200
+      - asset: assets/fonts/ibm-plex-sans-arabic/IBMPlexSansArabic-Light.ttf
+        weight: 300
+      - asset: assets/fonts/ibm-plex-sans-arabic/IBMPlexSansArabic-Regular.ttf
+        weight: 400
+      - asset: assets/fonts/ibm-plex-sans-arabic/IBMPlexSansArabic-Medium.ttf
+        weight: 500
+      - asset: assets/fonts/ibm-plex-sans-arabic/IBMPlexSansArabic-SemiBold.ttf
+        weight: 600
+      - asset: assets/fonts/ibm-plex-sans-arabic/IBMPlexSansArabic-Bold.ttf
+        weight: 700
+  - family: Noto Kufi Arabic
+    fonts:
+      - asset: assets/fonts/noto-kufi-arabic/NotoKufiArabic-Light.ttf
+        weight: 300
+      - asset: assets/fonts/noto-kufi-arabic/NotoKufiArabic-Regular.ttf
+        weight: 400
+      - asset: assets/fonts/noto-kufi-arabic/NotoKufiArabic-Medium.ttf
+        weight: 500
+      - asset: assets/fonts/noto-kufi-arabic/NotoKufiArabic-Bold.ttf
+        weight: 700
+  - family: Reem Kufi
+    fonts:
+      - asset: assets/fonts/reem-kufi/ReemKufi-Regular.ttf
+        weight: 400
+      - asset: assets/fonts/reem-kufi/ReemKufi-Medium.ttf
+        weight: 500
+      - asset: assets/fonts/reem-kufi/ReemKufi-SemiBold.ttf
+        weight: 600
+      - asset: assets/fonts/reem-kufi/ReemKufi-Bold.ttf
+        weight: 700
+  - family: Amiri
+    fonts:
+      - asset: assets/fonts/amiri/Amiri-Regular.ttf
+        weight: 400
+      - asset: assets/fonts/amiri/Amiri-Bold.ttf
+        weight: 700
+      - asset: assets/fonts/amiri/Amiri-Italic.ttf
+        weight: 400
+        style: italic
+      - asset: assets/fonts/amiri/Amiri-BoldItalic.ttf
+        weight: 700
+        style: italic
+  - family: Aref Ruqaa
+    fonts:
+      - asset: assets/fonts/aref-ruqaa/ArefRuqaa-Regular.ttf
+        weight: 400
+      - asset: assets/fonts/aref-ruqaa/ArefRuqaa-Bold.ttf
+        weight: 700
+  - family: Scheherazade New
+    fonts:
+      - asset: assets/fonts/scheherazade-new/ScheherazadeNew-Regular.ttf
+        weight: 400
+      - asset: assets/fonts/scheherazade-new/ScheherazadeNew-Medium.ttf
+        weight: 500
+      - asset: assets/fonts/scheherazade-new/ScheherazadeNew-SemiBold.ttf
+        weight: 600
+      - asset: assets/fonts/scheherazade-new/ScheherazadeNew-Bold.ttf
+        weight: 700
+  - family: Poppins
+    fonts:
+      - asset: assets/fonts/poppins/Poppins-Regular.ttf
+        weight: 400
+      - asset: assets/fonts/poppins/Poppins-Medium.ttf
+        weight: 500
+      - asset: assets/fonts/poppins/Poppins-SemiBold.ttf
+        weight: 600
+      - asset: assets/fonts/poppins/Poppins-Bold.ttf
+        weight: 700
+  - family: Montserrat
+    fonts:
+      - asset: assets/fonts/montserrat/Montserrat-Light.ttf
+        weight: 300
+      - asset: assets/fonts/montserrat/Montserrat-Regular.ttf
+        weight: 400
+      - asset: assets/fonts/montserrat/Montserrat-Medium.ttf
+        weight: 500
+      - asset: assets/fonts/montserrat/Montserrat-SemiBold.ttf
+        weight: 600
+      - asset: assets/fonts/montserrat/Montserrat-Bold.ttf
+        weight: 700
+  - family: Inter
+    fonts:
+      - asset: assets/fonts/inter/Inter-Regular.ttf
+        weight: 400
+      - asset: assets/fonts/inter/Inter-Medium.ttf
+        weight: 500
+      - asset: assets/fonts/inter/Inter-SemiBold.ttf
+        weight: 600
+      - asset: assets/fonts/inter/Inter-Bold.ttf
+        weight: 700
+  - family: Roboto
+    fonts:
+      - asset: assets/fonts/roboto/Roboto-Regular.ttf
+        weight: 400
+      - asset: assets/fonts/roboto/Roboto-Medium.ttf
+        weight: 500
+      - asset: assets/fonts/roboto/Roboto-Bold.ttf
+        weight: 700

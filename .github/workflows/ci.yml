@@ -1,0 +1,77 @@
+name: CI — Analyze, Test & Publish Demo
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  analyze-and-test:
+    name: Analyze & Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+      - name: Install dependencies (package)
+        run: flutter pub get
+      - name: Analyze package
+        run: flutter analyze
+      - name: Test package
+        run: flutter test --reporter expanded
+      - name: Install dependencies (example)
+        run: flutter pub get
+        working-directory: example
+      - name: Analyze example
+        run: flutter analyze
+        working-directory: example
+      - name: Test example
+        run: flutter test
+        working-directory: example
+
+  build-web-demo:
+    name: Build Web Demo
+    needs: analyze-and-test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+      - name: Bootstrap web project
+        run: |
+          flutter pub get
+          flutter create . --platforms=web --project-name flutter_fonts_kit_example
+        working-directory: example
+      - name: Build web (release)
+        run: flutter build web --release --base-href "/${{ github.event.repository.name }}/"
+        working-directory: example
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: example/build/web
+
+  deploy-pages:
+    name: Deploy to GitHub Pages
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    needs: build-web-demo
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
