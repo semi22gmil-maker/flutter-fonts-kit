@@ -1,17 +1,30 @@
-# flutter_fonts_kit_example
+# مثال Flutter Fonts Kit
 
-A new Flutter project.
+تطبيق تجريبي كامل يوضّح كل قدرات المكتبة.
 
-## Getting Started
+```bash
+flutter pub get
+flutter run                # جهاز أو محاكي
+flutter run -d chrome      # على المتصفح
+```
 
-This project is a starting point for a Flutter application.
+## ما يعرضه
 
-A few resources to get you started if this is your first Flutter project:
+- **معاينة حيّة**: اكتب نصاً وشاهده يُطبَّق على كل الخطوط فوراً.
+- **تدرّج الأحجام** بنفس الخط (Display / Headline / Body / Caption).
+- **تصفية حسب التصنيف**: بلا زخرفة، كوفي، نسخ، زخرفي…
+- **منتقي الخطوط** كصفحة كاملة أو كلوحة سفلية، مع بحث عربي/إنجليزي.
+- **صفحة تفاصيل الخط**: شريط الحجم، أزرار الأوزان، نسخ `fontFamily`.
+- **وضع ليلي/نهاري** متكامل.
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+الصفحات:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```
+lib/
+├── main.dart                     # التطبيق + FontKit
+└── pages/
+    ├── home_page.dart            # الرئيسية
+    ├── specimen_page.dart        # تفاصيل الخط
+    └── widgets/
+        └── category_chips.dart   # شرائح التصنيف
+```
