@@ -9,8 +9,8 @@ repository: https://github.com/your-username/flutter-fonts-kit
 issue_tracker: https://github.com/your-username/flutter-fonts-kit/issues
 
 environment:
-  sdk: ">=3.4.0 <4.0.0"
-  flutter: ">=3.22.0"
+  sdk: ">=3.6.0 <4.0.0"
+  flutter: ">=3.27.0"
 
 dependencies:
   flutter:
